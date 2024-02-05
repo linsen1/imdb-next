@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Providers from "@/app/Providers";
 import Navbar from "@/components/Navbar";
 
+
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({children}) {
         <Providers>
             <Header/>
             <Navbar/>
-            {children}
+
+                {children}
+
         </Providers>
         </body>
         </html>
